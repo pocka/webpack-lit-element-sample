@@ -4,7 +4,8 @@
   "scripts": {
     "serve": "http-server dist -p 8080",
     "dev": "webpack-dev-server --port 3000",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "test": "echo Maybe okay"
   },
   "browserslist": [
     "last 2 versions",
