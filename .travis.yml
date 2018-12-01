@@ -1,0 +1,13 @@
+language: node_js
+
+before_deploy:
+  - yarn build
+
+deploy:
+  provider: pages
+  skip-cleanup: true
+  local-dir: dist
+  github-token: $GITHUB_TOKEN
+  keep-history: true
+  on:
+    branch: master
