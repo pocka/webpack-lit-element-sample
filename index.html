@@ -1,0 +1,34 @@
+<html>
+  <head>
+    <title>Web Components Test</title>
+
+    <!-- Need for IE11 -->
+    <script src="//cdn.polyfill.io/v2/polyfill.min.js"></script>
+
+    <!-- Web components and its polyfill -->
+    <script async src="components.js"></script>
+
+    <!-- Script that needs to wait DOM load -->
+    <script defer src="main.js"></script>
+
+    <style>
+      x-app {
+        /* Overrides default background! */
+        background-color: #faf;
+      }
+
+      x-app:hover {
+        background-color: #ffa;
+      }
+    </style>
+  </head>
+
+  <body>
+    <x-app id="app" class="root" name="WebComponents">
+      <p>
+        <a href="https://pocka.github.io/webpack-lit-element-sample">Yeah!</a>
+      </p>
+      <input id="name" type="text" />
+    </x-app>
+  </body>
+</html>
