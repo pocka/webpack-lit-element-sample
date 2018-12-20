@@ -5,7 +5,7 @@ const CopyPlugin = require('copy-webpack-plugin')
 const pkg = require('./package.json')
 
 module.exports = {
-  entry: ['./src/components.js', './src/main.js'],
+  entry: { components: './src/components.js', main: './src/main.js' },
   output: {
     filename: '[name].js',
     path: path.resolve(__dirname, './dist')
