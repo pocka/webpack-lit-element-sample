@@ -34,7 +34,7 @@ This will serve contents under dist on <http://localhost:8080>.
 ## Things you should care
 
 - If you transpile WebComponents code into ES5 by babel,
-  you need to set [`babel-plugin-transform-builtin-classes`](https://www.npmjs.com/package/babel-plugin-transform-builtin-classes) plugin and add `"LitElement"`(when you use `lit-element`) or `"HTMLElement"`(when you extend native `HTMLElement`) to `<pluginOption>.globals`.
+  you need to set [`babel-plugin-transform-builtin-classes`](https://www.npmjs.com/package/babel-plugin-transform-builtin-classes) plugin and add `"LitElement"`(when you use `lit-element`) or `"HTMLElement"`(when you extend native `HTMLElement`) to `<pluginOption>.globals` in Babel config. You can see it in this repository at `babel.plugins` in [`package.json`](./package.json).
 - lit-element is not a stable.
 - There are [known](https://github.com/polymer/lit-element#known-issues) [issues](https://github.com/webcomponents/webcomponentsjs#known-issues).
 - This is unofficial sample repository :smirk_cat:
